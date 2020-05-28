@@ -5,12 +5,8 @@ metadata:
   annotations:
     nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
-  backend:
-    serviceName: default-http-backend
-    servicePort: 8080
   rules:
-  - host: poc-docker.eastus.cloudapp.azure.com
-    http:
+  - http:
       paths:
       - path: /employee
         backend:
