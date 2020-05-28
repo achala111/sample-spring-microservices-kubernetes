@@ -9,7 +9,7 @@ spec:
     serviceName: default-http-backend
     servicePort: 8080
   rules:
-  - host: localhost
+  - host: poc-docker.eastus.cloudapp.azure.com
     http:
       paths:
       - path: /employee
